@@ -20,3 +20,6 @@ jobs:
 
       - name: Construir imagem Docker
         run: docker build -t meu-primeiro-pipeline .
+
+      - name: Verificar referencia CSS
+        run: grep -q 'href="estilo.css"' index.html
